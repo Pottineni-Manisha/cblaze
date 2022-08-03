@@ -1,5 +1,10 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
+import RegisterPage from './RegisterPage'
+import CartPage from './CartPage'
+import LoginPage from './LoginPage'
+import ChangePasswordPage from './ChangePasswordPage'
+import HomePage from './HomePage'
 
 function Routes() {
   return (
