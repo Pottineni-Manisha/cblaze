@@ -1,18 +1,21 @@
-import React, {Suspense } from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import './config/axiosConfig.js';
-import  './config/i18n.js';
+import React, { Suspense } from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import "./config/axiosConfig.js";
+import "./config/i18n.js";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-      <Suspense fallback={(<div>Loading...</div>)} >
-          <App />
-      </Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Suspense>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
