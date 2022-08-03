@@ -36,7 +36,7 @@ class School extends React.Component {
                 </div>
                 <div className="section-C">
 
-                    <BrowserRouter basename="/school">
+                    {/* <BrowserRouter basename="/school">
                         <Switch>
                             <Route exact path="/register">
                                 <Register />
@@ -54,8 +54,8 @@ class School extends React.Component {
                             {/* <Route path="/error">
                                 <Redirect to="/" />
                             </Route> */}
-                        </Switch>
-                    </BrowserRouter>
+                        {/* </Switch>
+                    </BrowserRouter> */} */
                 </div>
             </div>
 
